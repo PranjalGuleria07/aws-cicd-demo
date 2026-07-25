@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Wanderlust Travel — Discover breathtaking destinations worldwide. Book your dream vacation with expert guides, best prices, and unforgettable experiences." />
+  <meta name="keywords" content="travel, vacation, booking, destinations, tours, holiday packages" />
+  <meta name="author" content="Wanderlust Travel Agency" />
+  <meta property="og:title" content="Wanderlust Travel — Explore the World" />
+  <meta property="og:description"
+    content="Book your dream vacation with expert guides, best prices, and unforgettable experiences worldwide." />
+  <meta property="og:type" content="website" />
+  <title>Wanderlust Travel main— Explore the World</title>
+<script src="main.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230EA5E9'><path d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/></svg>" />
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" role="status" aria-label="Loading">
+    <div class="loader-logo">Wander<span>lust</span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Wanderlust Travel Home">
+        <div class="nav-logo-icon">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+        </div>
+        <span class="nav-logo-text">Wander<span>lust</span></span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+      </ul>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta">Book Now</a>
+  </div>
+
+  <main>
+
+    <!-- ═══ HERO ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero section">
+      <div class="hero-bg"></div>
+      <div class="hero-bg-image" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-shapes" aria-hidden="true">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              #1 Travel Agency Worldwide
+            </div>
+            <h1 class="hero-title">
+              Explore The World's<br />
+              <span class="highlight">Hidden Wonders</span>
+            </h1>
+            <p class="hero-subtitle">
+              Lets Turn your dream destinations into reality. With Wanderlust, every journey is crafted with care — from
+              thrilling adventures to serene getaways.
+            </p>
+            <div class="hero-actions">
+              <a href="destinations.html" class="btn btn-primary btn-lg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Explore Destinations
+              </a>
+              <a href="#search" class="btn btn-outline-white">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="M21 21l-4.35-4.35" />
+                </svg>
+                Search Trips
+              </a>
+            </div>
+
+            <div class="hero-stats" role="list">
+              <div class="hero-stat" role="listitem">
+                <div class="hero-stat-num">12<span>K+</span></div>
+                <div class="hero-stat-label">Happy Travelers</div>
+              </div>
+              <div class="hero-stat" role="listitem">
+                <div class="hero-stat-num">95<span>+</span></div>
+                <div class="hero-stat-label">Destinations</div>
+              </div>
+              <div class="hero-stat" role="listitem">
+                <div class="hero-stat-num">4.9<span>★</span></div>
+                <div class="hero-stat-label">Average Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══ SEARCH SECTION ══════════════════════════════════ -->
+    <section class="search-section" id="search" aria-label="Trip search">
+      <div class="container">
+        <div class="search-card">
+          <div class="search-card-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.35-4.35" />
+            </svg>
+            Find Your Perfect Trip
+          </div>
+          <div class="search-row">
+            <div class="search-field">
+              <label for="search-destination">Destination</label>
+              <div class="search-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <input type="text" id="search-destination" placeholder="Where do you want to go?" autocomplete="off" />
+              </div>
+            </div>
+            <div class="search-field">
+              <label for="search-departure">Departure</label>
+              <div class="search-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                <input type="date" id="search-departure" />
+              </div>
+            </div>
+            <div class="search-field">
+              <label for="search-return">Return</label>
+              <div class="search-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                <input type="date" id="search-return" />
+              </div>
+            </div>
+            <div class="search-field">
+              <label for="search-travelers">Travelers</label>
+              <div class="search-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                </svg>
+                <select id="search-travelers">
+                  <option value="">Select travelers</option>
+                  <option value="1">1 Adult</option>
+                  <option value="2">2 Adults</option>
+                  <option value="3">3 Adults</option>
+                  <option value="4">4+ Adults</option>
+                  <option value="family">Family (2+2)</option>
+                </select>
+              </div>
+            </div>
+            <button class="search-btn" id="search-submit-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <circle cx="11" cy="11" r="8" />
+                <path d="M21 21l-4.35-4.35" />
+              </svg>
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FEATURED DESTINATIONS ═══════════════════════════ -->
+    <section class="section" id="destinations-section" aria-label="Featured destinations">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="section-badge reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            </svg>
+            Top Picks
+          </div>
+          <h2 class="section-title reveal">Featured <span>Destinations</span></h2>
+          <p class="section-subtitle reveal">
+            From tropical beaches to ancient ruins — discover our most-loved destinations curated by expert travel
+            guides.
+          </p>
+        </div>
+
+        <div class="destinations-grid" id="featured-destinations-grid" aria-label="Featured destinations grid">
+          <!-- Injected by main.js -->
+        </div>
+
+        <div style="text-align:center; margin-top: 52px;" class="reveal">
+          <a href="destinations.html" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            </svg>
+            View All Destinations
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHY CHOOSE US ════════════════════════════════════ -->
+    <section class="section section-alt" id="features" aria-label="Why choose us">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="section-badge reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            Why Wanderlust
+          </div>
+          <h2 class="section-title reveal">Why Choose <span>Us</span></h2>
+          <p class="section-subtitle reveal">
+            We're not just a travel agency — we're your trusted partner in crafting memories that last a lifetime.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon fi-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <h3 class="feature-title">95+ World Destinations</h3>
+            <p class="feature-desc">From Santorini's sunsets to Patagonia's glaciers — we cover over 95 handpicked
+              destinations across 6 continents.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon fi-orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h3 class="feature-title">24/7 Expert Support</h3>
+            <p class="feature-desc">Our team of passionate travel experts is available around the clock to ensure your
+              journey is flawless.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon fi-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Secure Booking</h3>
+            <p class="feature-desc">Your data and payments are protected with bank-grade SSL encryption and secure
+              payment gateways.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-4">
+            <div class="feature-icon fi-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Best Price Guarantee</h3>
+            <p class="feature-desc">Find it cheaper elsewhere? We'll match the price — plus give you an extra 5%
+              discount. No questions asked.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-5">
+            <div class="feature-icon fi-pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Tailored Experiences</h3>
+            <p class="feature-desc">Every itinerary is crafted uniquely for you — honeymoon, family fun, solo adventure,
+              or corporate retreat.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-6">
+            <div class="feature-icon fi-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg>
+            </div>
+            <h3 class="feature-title">Sustainable Travel</h3>
+            <p class="feature-desc">We partner with eco-conscious operators and offset 100% of carbon emissions for
+              every trip booked.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ═════════════════════════════════════ -->
+    <section class="section" id="testimonials" aria-label="Customer testimonials">
+      <div class="container">
+        <div class="section-header centered">
+          <div class="section-badge reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <h2 class="section-title reveal">Loved by <span>Travelers</span></h2>
+          <p class="section-subtitle reveal">
+            Over 12,000 happy travelers worldwide trust Wanderlust for their most cherished journeys.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal reveal-delay-1">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="testimonial-text">"Wanderlust made our Santorini honeymoon absolutely perfect. Every detail was
+              taken care of — from private sunset dinners to exclusive boat tours. We'll definitely book again!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah Chen"
+                class="testimonial-avatar" loading="lazy" />
+              <div>
+                <div class="testimonial-name">Sarah Chen</div>
+                <div class="testimonial-location">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  San Francisco, CA
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-2">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="testimonial-text">"The Kyoto package exceeded every expectation. My guide was incredibly
+              knowledgeable, and the seamless logistics meant I could focus entirely on soaking in the beauty."</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James Patel"
+                class="testimonial-avatar" loading="lazy" />
+              <div>
+                <div class="testimonial-name">James Patel</div>
+                <div class="testimonial-location">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  London, UK
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal reveal-delay-3">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <p class="testimonial-text">"Booked the Maldives overwater bungalow package and it was a dream come true.
+              The staff were incredibly attentive and the snorkeling was world-class. Pure magic!"</p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Amara Osei"
+                class="testimonial-avatar" loading="lazy" />
+              <div>
+                <div class="testimonial-name">Amara Osei</div>
+                <div class="testimonial-location">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  Toronto, Canada
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA BANNER ═══════════════════════════════════════ -->
+    <section class="cta-section" id="cta" aria-label="Call to action">
+      <div class="cta-bg-shape cta-bg-shape-1" aria-hidden="true"></div>
+      <div class="cta-bg-shape cta-bg-shape-2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-inner">
+          <div class="section-badge reveal"
+            style="justify-content:center; background: rgba(56,189,248,.15); color: var(--color-primary-light);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            Limited Offers
+          </div>
+          <h2 class="cta-title reveal">
+            Ready to Start Your<br /><span>Next Adventure?</span>
+          </h2>
+          <p class="cta-subtitle reveal">
+            Join over 12,000 adventurers who've discovered the world with Wanderlust. Limited spots available — book
+            your dream trip today and get up to 30% off.
+          </p>
+          <div class="cta-actions reveal">
+            <a href="destinations.html" class="btn btn-primary btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              </svg>
+              Explore Packages
+            </a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              Contact an Expert
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="nav-logo-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+            </div>
+            Wanderlust
+          </div>
+          <p class="footer-desc">Your trusted travel partner since 2018. We craft unforgettable journeys to the world's
+            most beautiful destinations.</p>
+          <div class="footer-social" role="list">
+            <a href="#" class="footer-social-link" role="listitem" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" role="listitem" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" role="listitem" aria-label="Follow us on Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" role="listitem" aria-label="Watch us on YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+              </svg>
+            </a>
+            <a href="#" class="footer-social-link" role="listitem" aria-label="Connect on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog & Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Destinations -->
+        <div>
+          <h3 class="footer-col-title">Top Destinations</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="destinations.html">Santorini, Greece</a></li>
+            <li><a href="destinations.html">Kyoto, Japan</a></li>
+            <li><a href="destinations.html">Paris, France</a></li>
+            <li><a href="destinations.html">Bali, Indonesia</a></li>
+            <li><a href="destinations.html">Maldives</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h3 class="footer-col-title">Stay Inspired</h3>
+          <p style="font-size:.87rem; color:rgba(255,255,255,.5); line-height:1.7; margin-bottom:8px;">Get travel
+            inspiration, exclusive deals and tips delivered to your inbox.</p>
+          <div class="footer-newsletter-input">
+            <input type="email" placeholder="Your email address" aria-label="Newsletter email" />
+            <button type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Wanderlust Travel. All rights reserved. Built with ❤️ for explorers.</p>
+        <nav class="footer-bottom-links" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
